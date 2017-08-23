@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Moore's Booking Form: Book now to receive a Promo Code for your next visit</title>
+		<meta charset="UTF-8">
+		<meta name="description=" content="Moore's a unique family run Bed & Breakfast overlooking Galway Bay on the West Coast of Ireland. 
+		Book now to receive a Promo Code for your next visit.
+		Offering luxery quality dining and accommodation at an affordable price Moore's is an ideal choice for couple's or families.
+		We are child friendly and cater for any dietry resttrictions and are wheelchair accessablie so are perfect for anyone no matter your age, tastes or mobility.
+		Traditional Irish Breakfast 
+		Also available Continental, Vegetarian or Speciality Breakfasts.
+		Options include Vegetarian,  Pescatarian, Vegan, Fruitarian, 
+		Allergies, Diabetic/Sugar Free, Gluten Free, Celiac, Sulphite Free, Lactose Intolerant, Nut Allergy, Fish Allergy, 
+		Religious dietary restrictions, Kosher, Halal, Caffeine Free, I-tal, 
+		Low-Carb, Paleo, Ketogenic, Low-GI, 
+		Health food, Low-Cholesterol, Fat Free, Weight Watchers, Organic"> 
+			<link rel="stylesheet" href="styles.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+				</script>
+				<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js">
+				</script>
+
+				
+				<script src="jquery.js">
+				</script>
+			</head>
+
+			<body>
+
+
+				<!--Header--> 			
+
+				<header>
+
+
+					<!-- Search --> 			
+					<div id="search">
+
+
+						<label>Search:</label>
+
+						<input type="text">
+
+						</div>
+
+						<!-- End of Search --> 			
+
+
+						<!--Logo -->
+						<div id="logo">
+							<a href="index.html"  title="Moore's Bed & Breakfast Galway Bay">
+								<img src="images/logo.jpg" alt="Moore's Bed & Breakfast Galway Bay" height="200" width="200">
+								</a>
+							</div>
+
+							<!-- End of Logo -->
+
+
+							<!--Nav -->
+							<div id="navbar">
+								<nav>
+
+									<ul>
+										<li class="navbar">
+											<a href ="index.html">
+												<em>
+													<strong>Home
+													</strong>
+												</em>
+											</a> &nbsp; 
+										</li>
+
+
+
+										<li class="navbar">
+											<a href ="rooms.html">
+												<em>
+													<strong>Rooms
+													</strong>
+												</em>
+											</a>  &nbsp;
+										</li>
+
+
+
+										<li class="navbar">
+											<a href ="menu.html">
+												<em>
+													<strong>Menu
+													</strong>
+												</em>
+											</a>  &nbsp; 
+										</li>
+
+
+										<li class="navbar">
+											<a href ="bookform.html">
+												<em>
+													<strong>Booking
+													</strong>
+												</em>
+											</a>  &nbsp; 
+										</li>
+
+										<li class="navbar">
+											<a href ="activities.html">
+												<em>
+													<strong>Activities
+													</strong>
+												</em>
+											</a>  &nbsp;
+										</li>
+
+
+										<li class="navbar">
+											<a href ="GettingHere.html">
+												<em>
+													<strong>
+														Getting Here
+													</strong>
+												</em> 
+											</a> &nbsp; 
+										</li>
+
+
+										<li class="navbar">
+											<a href ="faq.html">
+												<em>
+													<strong>FAQ
+													</strong>
+												</em>
+											</a> &nbsp; 
+										</li>
+
+										<li class="navbar">
+											<a href ="ContactUs.html">
+												<em>
+													<strong>
+													Contact Us
+													</strong>
+												</em>
+											</a> &nbsp;
+										</li>
+									</ul>
+								</nav>
+
+
+
+
+							</div>
+							<!--End of Nav -->
+
+
+
+
+							<!--Book Now Banner-->
+
+
+
+							<div id="booknow-banner">
+								<form>
+
+									<label>Room</label> &nbsp;
+									<select class="booknow-forms-room" name="room">
+
+										<option value="">All rooms</option>
+										<option value="1">The Wild Atlantic Way Suite </option>
+										<option value="2">The Moher Suite</option>
+										<option value="3">The West Suite</option>	
+										<option value="4">The Connacht Suite</option>	
+									</select>
+
+									<label>Arriving:</label>
+									<input type="date">
+
+
+										<label>Departing:</label>
+										<input type="date">
+
+											<label>Promo Code</label>
+
+											<input type="text" name="Promo Code">
+
+
+												<input class="btn-book-now" name="Book_Now" value="Book Now" type="button">
+
+
+
+												</form>
+											</div>
+
+											<!--End of Book Now Banner -->
+
+											<!--End of Header -->
+
+										</header>
+
+
+
+
+
+
+
+										<!--Form id info-->
+										<form id="booking-form" action="script.php" method="post"> 
+
+
+											<!--Header for whole form-->
+											
+												
+													<h1>Booking</h1>
+													<br>
+
+
+
+														<!--Fieldset for Guest Information-->
+														<section id="guest-info">
+															<fieldset>
+																<legend>Guest Information</legend>
+																<br>
+
+
+
+
+																	<!--First and Last Name-->
+																	<section id="fname-lname">
+																		<fieldset>
+																			<label for="fn">First Name :</label>
+
+																			<input id="fn" type="text" name="firstName" placeholder="Patrick" required>
+																				<br>
+																					<br>
+																						<label for="ln">Last Name : </label>
+																						<input id="ln" type="text" name="lastName" placeholder="Murphy" required>
+																							<br>
+																							</fieldset>
+																						</section>
+
+
+																						<!--Dropdown Menu of Rooms-->
+
+																						<section id="room-menu">
+																							<fieldset>
+																								<br>
+																									<em>
+																										<strong>Please Select a Room
+																										</strong>
+																									</em>
+																									<br>
+																										<select name="Rooms">
+																											<option value="wildatlantic">The Wild Atlantic Way Suite</option>
+																											<option value="moher">The Moher Suite</option>
+																											<option value="westsuite">The West Suite</option>
+																											<option value="connacht">The Connacht Suite</option>
+																										</select>
+																										<br>
+																											<br>
+																											</fieldset>
+																										</section>
+
+																										<!--Booking Date Calander-->
+																										<section id="noguests--">
+																											<fieldset>
+																												<br>
+																													<label for="number">Number of Guests</label>
+																													<input id="number" type="number" name="number" min="1" max="5">
+																													</fieldset>
+																												</section>
+
+																												<!--Booking Date Calander-->
+																												<!--This is a placeholder, it will be replaced with a javascript interactive calander-->
+																												<section id="calander">
+																													<fieldset>
+																														<table>
+																															<caption>
+																																<em>
+																																	<strong>When will you be staying with us?
+																																	</strong>
+																																</em>
+																															</caption>
+																															<tr>
+																																<th id="name">Name</th>
+																																<th id="date">Date</th>
+																															</tr>
+																															<tr>
+
+																																<td headers="name">From</td>
+																																<td>
+																																	<input type="date" name="from" required>
+																																	</td> 
+																																</tr>
+																																<tr>
+
+
+																																	<td headers="name">Until</td>
+																																	<td>
+																																		<input type="date" name="until" required>
+																																		</td> 
+																																	</tr>
+																																</table> 
+																															</fieldset>
+
+
+																														</section>
+
+																														<!--Dietry Requirements-->
+																														<div id="dietreq">
+																															<fieldset>
+																																<legend>Dietry Requirements</legend>
+																																<br>
+
+																																	<!--Dietry Requirements Vegetarian-->
+
+																																	<section id="veg">
+																																		<fieldset>
+																																			<legend>Vegetarian</legend>
+																																			<input type="radio" name="veg" value="Vegetarian"/>Vegetarian
+																																			<input type="radio" name="pesca" value="Pescatarian"/>Pescatarian
+																																			<input type="radio" name="vegan" value="Vegan" />Vegan
+																																			<input type="radio" name="fruit" value="Fruitarian" />Fruitarian
+																																		</fieldset>
+																																	</section>
+																																	<!--End Vegetarian-->
+
+
+																																	<!--Dietry Requirements Allergies-->
+
+																																	<section id="allergies">
+																																		<fieldset>
+																																			<legend>Allergies</legend>
+																																			<input type="radio" name="diabetic" value="Diabetic"/>Diabetic/Sugar Free
+																																			<input type="radio" name="gluten" value="Gluten"/>Gluten Free
+																																			<input type="radio" name="sulphite" value="SulphiteFree"/>Sulphite Free
+																																			<input type="radio" name="lacto" value="LactoseIntolerant"/>Lactose Intolerant
+																																			<input type="radio" name="nut" value="NutAllergy"/>Nut Allergy
+																																			<input type="radio" name="fish" value="FishAllergy"/> Fish Allergy
+																																		</fieldset>
+																																	</section>
+																																	<!--End Allergies-->
+
+
+																																	<!--Dietry Requirements Religious-->
+
+																																	<section id="religious">
+																																		<fieldset>
+																																			<legend>Religious</legend>
+																																			<input type="radio" name="kosher" value="Kosher" />Kosher
+																																			<input type="radio" name="halal" value="Halal" />Halal
+																																			<input type="radio" name="caffree" value="Caffeine-Free" />Caffeine Free
+																																			<input type="radio" name="i-tal" value="I-tal" />I-tal
+																																		</fieldset>
+																																		<!--End Religious-->
+																																	</section>
+
+																																	<!--Dietry Requirements Low-Carb-->
+
+																																	<section id="low-carb">
+																																		<fieldset>
+																																			<legend>Low-Carb</legend>
+																																			<input type="radio" name="paleo" value="Paleo" />Paleo
+																																			<input type="radio" name="lowcarb" value="Low-Carb" />Low-Carb
+																																			<input type="radio" name="keto" value="Ketogenic" />Ketogenic
+																																			<input type="radio" name="gi" value="Low-GI" />Low-GI
+																																		</fieldset>
+																																		<!--End Low-Carb-->
+																																	</section>
+
+																																	<!--Dietry Requirements Health-->
+																																	<section id="health">
+																																		<fieldset>
+																																			<legend>Health</legend>
+																																			<input type="radio" name="lowchol" value="Low-Cholesterol" />Low-Cholesterol 
+																																			<input type="radio" name="fatfree" value="Fat-Free" />Fat Free
+																																			<input type="radio" name="ww" value="Weight-Watchers" />Weight Watchers
+																																			<input type="radio" name="organic" value="Organic" />Organic
+																																		</fieldset>
+																																		<!--End Health-->
+																																	</section>
+
+																																	<!--Dietry Requirements None-->
+
+																																	<section id="none">
+																																		<fieldset>
+																																			<legend>None</legend>
+																																			<input type="radio" name="none" value="None" checked/>None
+																																		</fieldset>
+																																		<!--End None-->
+																																	</section>
+																																	
+																																</fieldset>
+																																</div>
+																																<!--End of Dietry Requirements-->
+
+
+
+																																<!--Contact Information-->
+
+																																<div id="contactinfo">		
+																																	
+
+
+																																		<section id="telephone-input">
+																																			<!--Telephone-->
+																																			<br>
+																																				<label for="tel"> Telephone :
+																																					<input id="tel" type="tel"  name="telephone" placeholder="+353 123 345 678" required/>
+																																					</label>
+																																					<br>
+																																					</section>
+
+
+																																					<!--Email-->
+																																					<section id="email-input">
+																																						<br>
+																																							<label for="email"> Email : 
+																																								<input id="email" type="email" name="email" placeholder="example@gmail.com" required/>
+																																								</label>
+																																								<br>
+																																								</section>
+
+
+																																								<!--Comments-->
+																																								<section id="comments-input">
+																																									<br>
+																																										<label for="comments"> Comments
+																																											<textarea id="comments" name="comments" rows="3" cols="20">
+
+																																											</textarea>
+																																										</label>
+																																										<br>
+																																										</section>
+
+
+																																										<!--Submit Reset-->
+																																										<section id="submit-input">
+																																											<br>
+																																												<br>
+																																													<input id="submit" type="submit" value="Submit now"/>
+																																														<input id="reset" type="reset" value="Reset"/>
+																																															<br>
+																																															</section>
+
+																																								
+																																														</div>
+																																														<!--End of Contact Information-->
+																																													</fieldset>
+																																													</section>
+																																												
+																																												<!--End of Header for Guest Information-->
+																																											</form>
+																																										
+																																									
+
+
+
+
+																																									<!--Footer -->
+																																									<footer>
+											Moore's Bed & Breakfast Galway Bay
+																																										<div id="footer-navbar">
+
+
+																																											<ul>
+																																												<li class="footer-navbar">
+																																													<a href ="index.html">
+																																														<em>
+																																															<strong>Home
+																																															</strong>
+																																														</em>
+																																													</a> &nbsp; 
+																																												</li>
+
+
+
+																																												<li class="footer-navbar">
+																																													<a href ="rooms.html">
+																																														<em>
+																																															<strong>Rooms
+																																															</strong>
+																																														</em>
+																																													</a>  &nbsp; 
+																																												</li>
+
+
+
+																																												<li class="footer-navbar">
+																																													<a href ="menu.html">
+																																														<em>
+																																															<strong>Menu
+																																															</strong>
+																																														</em>
+																																													</a>  &nbsp; 
+																																												</li>
+
+
+																																												<li class="footer-navbar">
+																																													<a href ="bookform.html">
+																																														<em>
+																																															<strong>Booking
+																																															</strong>
+																																														</em>
+																																													</a>  &nbsp; 
+																																												</li>
+
+																																												<li class="footer-navbar">
+																																													<a href ="activities.html">
+																																														<em>
+																																															<strong>Activities
+																																															</strong>
+																																														</em>
+																																													</a>  &nbsp; 
+																																												</li>
+
+
+																																												<li class="footer-navbar">
+																																													<a href ="GettingHere.html">
+																																														<em>
+																																															<strong>
+																Getting Here
+																																															</strong>
+																																														</em> 
+																																													</a> &nbsp; 
+																																												</li>
+
+
+																																												<li class="footer-navbar">
+																																													<a href ="faq.html">
+																																														<em>
+																																															<strong>FAQ
+																																															</strong>
+																																														</em>
+																																													</a> &nbsp; 
+																																												</li>
+
+																																												<li class="footer-navbar">
+																																													<a href ="ContactUs.html">
+																																														<em>
+																																															<strong>
+
+																		Contact Us
+																																															</strong>
+																																														</em>
+																																													</a> &nbsp; 
+																																												</li>
+																																											</ul>
+
+																																										</div>
+
+																																										<div id="footer-socialmedia">
+																																											<ul>
+																																												<li class="footer-socialmedia">
+																																													<a href="https://www.facebook.com">
+																																														<img src="images/fb.jpg" alt="Facebook" height="100" width="100">
+
+																																														</a>
+																																													</li>
+
+																																													<li class="footer-socialmedia">
+																																														<a href="https://www.twitter.com"> 
+																																															<img src="images/twitter.jpg" alt="Twitter" height="100" width="100">
+																																															</a>
+																																														</li>
+
+																																														<li class="footer-socialmedia">
+																																															<a href="https://www.pinterest.com">
+																																																<img src="images/pin.jpg" alt="Pinterest" height="100" width="100">
+																																																</a>
+																																															</li>
+
+																																															<li class="footer-socialmedia">
+																																																<a href="https://www.instagram.com">
+																																																	<img src="images/insta.jpg" alt="Instagram" height="100" width="100">
+																																																	</a>
+																																																</li>
+																																															</ul>
+																																														</div>
+																																														<!--End of Footer -->
+																																													</footer>
+																																												</body>
+																																											</html>

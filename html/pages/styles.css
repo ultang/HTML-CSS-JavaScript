@@ -1,0 +1,117 @@
+body
+{
+	background-color:#20b261;
+	color: #330000;
+	text-align: center; 
+}
+
+
+header
+{
+	background-color:#0C214E;
+	color: white;
+	text-align: left; 
+
+	/*position : fixed;*/
+	/* I dont know why this fixed positioning isn't working*/
+
+}
+
+
+#search
+{
+	text-align: right; 
+	color: white;
+}
+
+
+nav
+{
+	text-align: right;
+}
+
+nav ul li 
+{
+	background-color:#35A8ED;
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+	margin: 0px;
+	
+}
+
+.navbar
+{
+	background-color: #35A8ED;
+}
+
+nav ul li :hover
+{
+	background-color:#91CBED;
+}
+
+a
+{
+	text-decoration: none;
+	color:white;
+}
+
+a:hover
+{
+text-decoration:underline;	
+}
+
+
+#booknow-banner
+{
+	background-color: #35A8ED;
+	text-align:right;
+}
+
+footer
+{
+	background-color:#0C214E;
+	color: white;
+	text-align: center; 
+	
+
+}
+
+.footer-navbar
+{
+	background-color:#0C214E;
+	color: white;
+	text-align: center;
+	display: inline;
+	
+	
+}
+
+.footer-socialmedia
+{
+	list-style-type: none;
+	display: inline;
+}
+
+p 
+{
+	display: inline;
+}
+
+
+
+#moores
+{
+	text-align: right;
+	display: inline;
+}
+
+#google-map
+{
+	text-align: left;
+	display: inline;	
+}
+
+
+
+
